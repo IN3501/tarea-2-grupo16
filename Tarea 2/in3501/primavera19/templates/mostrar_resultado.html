@@ -1,0 +1,39 @@
+
+{% extends 'navbar.html' %}
+
+{% block title %}
+Resultados del formulario
+{% endblock title %}
+Resultados del formulario
+{% block content %}
+
+<div>
+		<table>
+			<tr>
+				<td>Nombre del estudiante: </td>
+				<td>{{Nombre}}</td>
+			</tr>
+			<tr>
+				<td>Edad del estudiante: </td>
+				<td>{{Edad}}</td>
+			</tr>
+			<tr>
+				<td>Correo electrónico del estudiante: </td>
+				<td>{{Correo}}</td>
+			</tr>
+			<tr>
+				<td>Departamento del estudiante: </td>
+				<td>{{Departamento}}</td>
+			</tr>
+			<tr>
+				<td>Tema de preferencia del estudiante: </td>
+				<td>{{Tema}}</td>
+			</tr>
+			<tr>
+				<td>Alimento:</td>
+				<td>{{Alimento}}</td>
+			</tr>
+		</table>
+	</div>
+
+{% endblock content %}
