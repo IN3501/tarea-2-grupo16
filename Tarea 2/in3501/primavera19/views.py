@@ -10,6 +10,12 @@ def inputs(request):
 def Contacto(request):
 	return render(request, 'Contacto.html')
 
+def iniciodesesion(request):
+	return render(request, 'iniciodesesion.html')
+
+def creaciondecuenta(request):
+	return render(request, 'creaciondecuenta.html')
+
 
 def recuperar(request):
 	Nombre=request.POST["inputText"]

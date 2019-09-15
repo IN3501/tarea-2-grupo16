@@ -10,4 +10,6 @@ urlpatterns = [
 	path("cierres", cierres, name='cierres'),
 	path("cortinas", cortinas, name='cortinas'),
 	path("productos", productos, name='productos'),
+	path("creaciondecuenta", creaciondecuenta, name='creaciondecuenta'),
+	path("iniciodesesion", iniciodesesion, name='iniciodesesion'),
 ]
