@@ -61,3 +61,6 @@ def cortinas(request):
 
 def productos(request):
 	return render(request, 'productos.html')
+	
+def carritodecompras(request):
+	return render(request,'carritodecompras.html')
