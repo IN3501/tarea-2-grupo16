@@ -1,0 +1,30 @@
+{% extends 'navbar.html' %}
+
+{% block title %}
+Productos
+{% endblock title %}
+
+{% block content %}
+<form>
+  <div class="form-row align-items-center">
+  	
+	  	<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="..." alt="imagen de cortinas">
+		  <div class="card-body">
+		    <h5 class="card-title">Cortinas</h5>
+		    <p class="card-text">Las cortinas son muy importantes a la hora de vestir la casa. Desde el color, material y tipo, podemos elegir considerando el espacio que tenemos, el estilo de los muebles y nuestros gustos personales. Nosotros ofrecemos las clásicas de tela con velo que nunca pasan de moda.</p>
+		    <a href="{% url 'cortinas' %}" class="btn btn-primary">Ver modelos</a>
+		  </div>
+		</div>
+	
+		<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="..." alt="imagen de cierres de terrazas">
+		  <div class="card-body">
+		    <h5 class="card-title">Cierres de terrazas ajustables</h5>
+		    <p class="card-text">Protección frío, lluvia y polvo, de forma ajustable. Las cortinas cierres de terraza son una gran forma de separar ambientes en el exterior del hogar debido a lo versátiles que son.  </p>
+		    <a href="{% url 'cierres' %}" class="btn btn-primary">Ver modelos</a>
+		  </div>
+		</div>
+		
+	
+{% endblock content %}
