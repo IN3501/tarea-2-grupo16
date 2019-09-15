@@ -47,3 +47,11 @@ def recuperar1(request):
 
 	return render(request, "mostrar_contacto.html", diccionario)
 
+def cierres(request):
+	return render(request, 'cierres.html')
+
+def cortinas(request):
+	return render(request, 'cortinas.html')
+
+def productos(request):
+	return render(request, 'productos.html')

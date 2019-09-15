@@ -7,5 +7,7 @@ urlpatterns = [
 	path("mostrar_resultado", recuperar, name='mostrar_resultado'),
 	path('Contacto/', Contacto, name='Contacto'),
 	path("mostrar_contacto", recuperar1, name='mostrar_contactos'),
-	
+	path("cierres", cierres, name='cierres'),
+	path("cortinas", cortinas, name='cortinas'),
+	path("productos", productos, name='productos'),
 ]
