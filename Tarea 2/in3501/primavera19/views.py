@@ -7,23 +7,43 @@ def index(request):
 def inputs(request):
 	return render(request, 'inputs.html')
 
+def Contacto(request):
+	return render(request, 'Contacto.html')
+
 
 def recuperar(request):
 	Nombre=request.POST["inputText"]
-	Edad=request.POST["inputNumber"]
 	Correo=request.POST["inputEmail"]
-	Departamento=request.POST["input Select"]
-	Tema=request.POST["exampleRadios"]
-	l_var=request.POST.getlist('check[]')
-	
+	Región=request.POST["inputSelect"]
+	Ciudad=request.POST["inputCity"]
+	Fecha=request.POST["inputDate"]
+	Pedido=request.POST["textA"]
+	Retiro=request.POST["exampleRadios"]
 
 	diccionario={}
 	diccionario["Nombre"]=Nombre
-	diccionario["Edad"]=Edad
 	diccionario["Correo"]=Correo
-	diccionario["Departamento"]=Departamento
-	diccionario["Tema"]=Tema
-	diccionario["Alimento"]=l_var
+	diccionario["Región"]=Región
+	diccionario["Ciudad"]=Ciudad
+	diccionario["Fecha"]=Fecha
+	diccionario["Pedido"]=Pedido
+	diccionario["Retiro"]=Retiro
 
 	return render(request, "mostrar_resultado.html", diccionario)
+
+def recuperar1(request):
+	nombre=request.POST["inputNombre"]
+	telefono=request.POST["inputTelefono"]
+	Email=request.POST["inputMail"]
+	Asunto=request.POST["inputAsunto"]
+	Mensaje=request.POST["inputMensaje"]
+
+	diccionario={}
+	diccionario["nombre"]=nombre
+	diccionario["telefono"]=telefono
+	diccionario["Email"]=Email
+	diccionario["Asunto"]=Asunto
+	diccionario["Mensaje"]=Mensaje
+
+	return render(request, "mostrar_contacto.html", diccionario)
 

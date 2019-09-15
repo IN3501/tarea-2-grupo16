@@ -2,21 +2,28 @@
 {% extends 'navbar.html' %}
 
 {% block title %}
-Confecciones a pedido
+Contacto
 {% endblock title %}
 
 {% block content %}
 
 <div id="descripcion" class="container">
-    <h1>Confecciones a pedido</h1>
+    <h1>Contáctese con nosotros</h1>
 
 <!-- En este segmento debemos indicarle al formulario qué hacer cuando se hace clic en el botón submit -->
-    <form action="/mostrar_resultado" method="POST" autocomplete="off">  {% csrf_token %}
+    <form action="/mostrar_contacto" method="POST" autocomplete="off">  {% csrf_token %}
 
     <div class="form-group">
-      <label for="exampleInputEmail1">Nombre del Cliente:</label>
-      <input type="text" class="form-control" id="exampleText" placeholder="Ingrese su nombre" name="inputText">
+      <label for="exampleInputEmail1">Nombre:</label>
+      <input type="text" class="form-control" id="exampleText" placeholder="Ingrese su nombre" name="inputNombre">
     </div>
+
+
+    <div class="form-group">
+      <label for="exampleNumber">Número de teléfono:</label>
+      <input type="number" class="form-control" id="exampleNumber" placeholder="Ingrese su número telefónico" name="inputTelefono">
+    </div> 
+
 
     <!--<div class="form-group">
       <label for="exampleFormControlTextarea">Type: textarea</label>
@@ -34,18 +41,18 @@ Confecciones a pedido
     </div> -->
 
     <div class="form-group">
-      <label for="exampleInputEmail1">Correo electrónico:</label>
-      <input type="email" class="form-control" id="exampleEmail" placeholder="Ingrese su email" name="inputEmail">
+      <label for="exampleInputEmail1">Email:</label>
+      <input type="email" class="form-control" id="exampleEmail" placeholder="Ingrese su email" name="inputMail">
     </div>
 
     <!-- <div class="form-group">
       <label for="exampleInputPassword1">Type: password</label>
       <input type="password" class="form-control" id="examplePassword" placeholder="ingrese contraseña" name="inputPassword">
-    </div> --> 
+    </div> 
 
 	<div class="form-group">
       <label for="exampleFormControlSelect1">Indique su Región</label>
-      <select class="form-control" id="exampleSelect" name="inputSelect">
+      <select class="form-control" id="exampleSelect" name="input Select">
         <option value="Región de Arica y Parinacota">Región de Arica y Parinacota</option>
         <option value="Región de Tarapacá">Región de Tarapacá</option>
         <option value="Región de Atacama">Región de Atacama</option>
@@ -63,36 +70,18 @@ Confecciones a pedido
         <option value="Región de Magallanes y de la Antárcia Chilena">Región de Magallanes y de la Antárcia Chilena</option>
         
       </select>
+    </div>-->
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Asunto:</label>
+      <input type="text" class="form-control" id="exampleText" placeholder="Ingrese el asunto" name="inputAsunto">
     </div>
 
     <div class="form-group">
-      <label for="exampleInputEmail1">Ingrese su ciudad:</label>
-      <input type="text" class="form-control" id="exampleText" placeholder="Ingrese su ciudad" name="inputCity">
-    </div>
-
-   <div class="form-group">
-      <label for="exampleNumber">Fecha tentativa de entrega:</label>
-      <input type="date" class="form-control" id="exampleDate" placeholder="Ingrese de entrega" name="inputDate">
+      <label for="exampleFormControlTextarea">Escriba su mensaje:</label>
+      <textarea class="form-control" id="exampleFormControlTextarea" rows="3" name="inputMensaje"></textarea>
     </div> 
 
-    <div class="form-group">
-      <label for="exampleFormControlTextarea">Especifique su pedido:</label>
-      <textarea class="form-control" id="exampleFormControlTextarea" rows="3" name="textA"></textarea>
-    </div> 
-
-    Indique su preferencia recibir el producto:
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Retiro" checked>
-      <label class="form-check-label" for="exampleRadios1">
-        Retiro en tienda
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Envío">
-      <label class="form-check-label" for="exampleRadios2">
-        Envío a domicilio
-      </label>
-    </div>
     <!--<div class="form-check">
       <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Escritores">
       <label class="form-check-label" for="exampleRadios3">
@@ -129,8 +118,6 @@ Confecciones a pedido
       <input type="file" class="form-control-file" id="exampleFile">
     </div> -->
 
-
- -->
 
     <div class="form-group">
     <button type="submit" class="btn btn-primary">Enviar</button>

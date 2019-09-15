@@ -1,0 +1,35 @@
+
+{% extends 'navbar.html' %}
+
+{% block title %}
+Solicitud de contacto
+{% endblock title %}
+Solicitud de contacto
+{% block content %}
+
+<div>
+		<table>
+			<tr>
+				<td>Nombre del cliente:</td>
+				<td>{{nombre}}</td>
+			</tr>
+			<tr>
+				<td>Número de teléfono del cliente:</td>
+				<td>{{telefono}}</td>
+			</tr>
+			<tr>
+				<td>Correo electrónico del cliente: </td>
+				<td>{{Email}}</td>
+			</tr>
+			<tr>
+				<td>Asunto del cliente: </td>
+				<td>{{Asunto}}</td>
+			</tr>
+			<tr>
+				<td>Mesaje del cliente: </td>
+				<td>{{Mensaje}}</td>
+			</tr>
+		</table>
+	</div>
+
+{% endblock content %}
