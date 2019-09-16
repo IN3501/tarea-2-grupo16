@@ -64,3 +64,6 @@ def productos(request):
 	
 def carritodecompras(request):
 	return render(request,'carritodecompras.html')
+
+def recuperar2(request):
+	return render(request, "verificacioncrearusuario.html")
