@@ -10,7 +10,7 @@ Creación de cuenta
 <div id="descripcion" class="container">
     <h1>Crea tu cuenta</h1>
 
-    <form action="/verificacioncrearusuario" method="POST" autocomplete="off">
+    <form action="/verificacioncrearusuario" method="POST" autocomplete="off"> {% csrf_token %}
 
     <div class="form-group">
       <label for="exampleInputEmail1">Nombre </label>

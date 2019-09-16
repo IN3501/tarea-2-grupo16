@@ -67,6 +67,8 @@ def carritodecompras(request):
 
 def recuperar2(request):
 	Nombre=request.POST["inputText"]
+	
 	diccionario={}
 	diccionario["Nombre"]=Nombre
+
 	return render(request, "verificacioncrearusuario.html", diccionario)

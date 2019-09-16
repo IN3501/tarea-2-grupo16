@@ -13,5 +13,5 @@ urlpatterns = [
 	path("creaciondecuenta", creaciondecuenta, name='creaciondecuenta'),
 	path("iniciodesesion", iniciodesesion, name='iniciodesesion'),
 	path("carritodecompras", carritodecompras,name='carritodecompras'),
-	path("verificacioncrearusuario", recuperar2, name='verificacioncrearusuario')
+	path("verificacioncrearusuario", recuperar2, name='verificacioncrearusuario'),
 ]
