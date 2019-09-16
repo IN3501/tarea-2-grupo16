@@ -14,4 +14,5 @@ urlpatterns = [
 	path("iniciodesesion", iniciodesesion, name='iniciodesesion'),
 	path("carritodecompras", carritodecompras,name='carritodecompras'),
 	path("verificacioncrearusuario", recuperar2, name='verificacioncrearusuario'),
+	path("mostar_inicio", recuperar3, name='mostar_inicio'),
 ]

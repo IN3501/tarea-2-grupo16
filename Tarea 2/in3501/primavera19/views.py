@@ -72,3 +72,11 @@ def recuperar2(request):
 	diccionario["Nombre"]=Nombre
 
 	return render(request, "verificacioncrearusuario.html", diccionario)
+
+def recuperar3(request):
+	Nombre=request.POST["inputNombre1"]
+
+	diccionario={}
+	diccionario["Nombre"]=Nombre
+
+	return render(request, "mostrar_inicio.html", diccionario)
