@@ -66,8 +66,8 @@ def carritodecompras(request):
 	return render(request,'carritodecompras.html')
 
 def recuperar2(request):
-	Nombre=request.POST["inputText"]
-	
+	Nombre=request.POST["inputNombrecompleto"]
+
 	diccionario={}
 	diccionario["Nombre"]=Nombre
 
