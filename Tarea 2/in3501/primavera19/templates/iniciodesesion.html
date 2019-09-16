@@ -10,7 +10,7 @@ Inicio de sesión
 <div id="descripcion" class="container">
     <h1>Inicie sesión </h1>
 
-    <form action="/mostrar_inicio" method="POST" autocomplete="off">
+    <form action="/mostrar_inicio" method="POST" autocomplete="off"> {% csrf_token %}
 
     <div class="form-group">
       <label for="exampleInputEmail1">Nombre de usuario</label>
